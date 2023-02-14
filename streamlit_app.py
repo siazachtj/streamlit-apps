@@ -16,7 +16,7 @@ st.write(user_input) # display user provided gre and gpa score inputs
 
 # Code to post the user inputs to the API and get the predictions
 # Paste the URL to your GCP Cloud Run API here!
-api_url = 'https://grad-school-admission-6fz6u3cctq-as.a.run.app'
+api_url = 'https://grad-school-admission-7vflamxmpa-as.a.run.app'
 api_route = '/predict'
 
 response = requests.post(f'{api_url}{api_route}', json=json.dumps(user_input)) # json.dumps() converts dict to JSON
